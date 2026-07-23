@@ -42,7 +42,7 @@
                 </p>
             </div>  
 
-            <div class="card">
+            <div class="card" onclick="location.href='password.html'">
                 <h3>🔐 Password Checker</h3>
                 <p>
                     Check password strength and identify security risks.
@@ -88,15 +88,16 @@
         </p>
         
         <div class="scanner-box">
-            <input type="text" placeholder="Enter URL or Email">
-            <button>Scan Now</button>
+            <input type="text" id="urlInput" placeholder="Enter URL or Email">
+            <button id="scanBtn">Scan Now</button>
         </div>
 
         <div class="result-box">
             <h3>Scanning Results</h3>
-            <p>Status: Wating for Scan...</p>
-            <p>Threat Level: --</p>
-            <p>Recomendation: Start a scan to view results.</p>
+            <p id="status">Status: Wating for Scan...</p>
+            <p id="threat">Threat Level: --</p>
+            <p id="riskScore"> Risk Score: 0</p>
+            <p id="recomendation">Recomendation: Start a scan to view results.</p>
         </div>
 
     </section>
