@@ -3,6 +3,8 @@ package com.cyber.cyber.controller;
 import java.util.Map;
 
 import com.cyber.cyber.model.PasswordRequest;
+import com.cyber.cyber.model.EmailRequest;
+import com.cyber.cyber.model.EmailResponse;
 import com.cyber.cyber.model.ScanResponse;
 import com.cyber.cyber.model.Tip;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,4 +41,5 @@ public passwordResponse checkPassword(
             
     return securityService.checkPassword(request);
 }
+
 }

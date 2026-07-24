@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Analyzer | Sentinel AI</title>
+    <link rel="stylesheet" href="email.css">
+</head>
+<body>
+
+<nav>
+    <h2>🛡️ Sentinel AI</h2>
+</nav>
+
+<div class="container">
+
+    <h1>📧 Email Analyzer</h1>
+
+    <p>Paste the email content below to detect phishing attempts.</p>
+
+    <textarea
+        id="emailInput"
+        placeholder="Paste your email here..."
+        rows="10"></textarea>
+
+    <button id="analyzeBtn">
+        Analyze Email
+    </button>
+
+    <div class="result">
+
+        <h3>Analysis Result</h3>
+
+        <p id="risk">
+            Risk Level : --
+        </p>
+
+        <p id="score">
+            Risk Score : --
+        </p>
+
+        <p id="message">
+            Message : --
+        </p>
+
+    </div>
+
+    <br>
+
+    <a href="cyber.html">← Back to Home</a>
+
+</div>
+
+<script src="email.js"></script>
+
+</body>
+</html>
